@@ -7,49 +7,6 @@
     <link rel="stylesheet" href="pages/index.css" />
   </head>
   <body class="page">
-    <svg width="0" height="0">
-      <defs>
-        <symbol width="48" height="48" id="burger" viewBox="0 0 48 48">
-          <path
-            d="M4 24H44"
-            stroke="#0A0A0A"
-            stroke-width="4"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M4 12H44"
-            stroke="#0A0A0A"
-            stroke-width="4"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M4 36H44"
-            stroke="#0A0A0A"
-            stroke-width="4"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </symbol>
-        <symbol width="48" height="48" id="cross" viewBox="0 0 48 48">
-          <path
-            d="M9.85791 38L38.1422 9.71573"
-            stroke="white"
-            stroke-width="4"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M9.85791 10L38.1422 38.2843"
-            stroke="white"
-            stroke-width="4"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </symbol>
-      </defs>
-    </svg>
     <header class="header">
       <div class="header__container">
         <button class="header__menu-button" id="menuButton"></button>
@@ -58,16 +15,22 @@
       <div class="header__menu">
         <button class="header__menu-close-button" id="menuCloseButton"></button>
         <nav>
-          <ul class="header__menu-links">
-            <li class="header__menu-link">О коллекции</li>
-            <li class="header__menu-link">Товары</li>
-            <li class="header__menu-link">Подписаться</li>
+          <ul class="header__menu-items">
+            <li class="header__menu-item">
+              <a href="#collection" class="header__menu-link">О коллекции</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#goods" class="header__menu-link">Товары</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#subscribeForm" class="header__menu-link">Подписаться</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="main">
-      <section class="collection">
+      <section class="collection" id="collection">
         <h2 class="collection__title">О коллекции</h2>
         <div class="collection__content">
           <p class="collection__description">
@@ -101,28 +64,48 @@
           </p>
         </div>
       </section>
-      <section class="goods">
+      <section class="goods" id="goods">
         <h2 class="goods__title">Товары</h2>
         <div class="slider">
           <ul class="slider__items">
             <li class="slider__item">
-              <img src="./images/slider/nikelab-1.png" alt="Вещь на продажу" class="slider__item-image">
+              <img
+                src="./images/slider/nikelab-1.png"
+                alt="Вещь на продажу"
+                class="slider__item-image"
+              />
               <button class="slider__buy-button">Купить</button>
             </li>
             <li class="slider__item">
-              <img src="./images/slider/nikelab-2.png" alt="Вещь на продажу" class="slider__item-image">
+              <img
+                src="./images/slider/nikelab-2.png"
+                alt="Вещь на продажу"
+                class="slider__item-image"
+              />
               <button class="slider__buy-button">Купить</button>
             </li>
             <li class="slider__item">
-              <img src="./images/slider/nikelab-3.png" alt="Вещь на продажу" class="slider__item-image">
+              <img
+                src="./images/slider/nikelab-3.png"
+                alt="Вещь на продажу"
+                class="slider__item-image"
+              />
               <button class="slider__buy-button">Купить</button>
             </li>
             <li class="slider__item">
-              <img src="./images/slider/nikelab-4.jpg" alt="Вещь на продажу" class="slider__item-image">
+              <img
+                src="./images/slider/nikelab-4.jpg"
+                alt="Вещь на продажу"
+                class="slider__item-image"
+              />
               <button class="slider__buy-button">Купить</button>
             </li>
             <li class="slider__item" id="last">
-              <img src="./images/slider/nikelab.png" alt="Вещь на продажу" class="slider__item-image">
+              <img
+                src="./images/slider/nikelab.png"
+                alt="Вещь на продажу"
+                class="slider__item-image"
+              />
               <button class="slider__buy-button">Купить</button>
             </li>
           </ul>

@@ -54,8 +54,9 @@
 
   }
 
-  &__menu-links {
+  &__menu-items {
     display: flex;
+    padding: 0;
     flex-direction: column;
     list-style: none;
     gap:80px;
@@ -70,15 +71,24 @@
 
   }
 
-  &__menu-link {
-    @include paragraph;
-    font-size: 32px;
-    font-weight: 500;
+  &__menu-item {
+
     text-transform: uppercase;
     text-align: center;
     cursor: pointer;
     transition: opacity 0.3s ease-out;
 
+
+    &:hover {
+      opacity: 0.4;
+    }
+  }
+
+  &__menu-link {
+    @include paragraph;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 500;
     @media screen and (max-width:1439px) {
       font-size: 24px;
     }
@@ -86,9 +96,6 @@
     @media screen and (max-width:767px) {
       font-size: 20px;
 
-    }
-    &:hover {
-      opacity: 0.4;
     }
   }
 

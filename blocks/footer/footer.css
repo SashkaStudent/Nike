@@ -66,6 +66,11 @@
   line-height: 24px;
   font-family: "Golos", Arial, sans-serif;
 }
+@media screen and (max-width: 767px) {
+  .footer__email-input {
+    max-width: 100%;
+  }
+}
 .footer__submit-button {
   box-sizing: border-box;
   padding: 8px 24px;
