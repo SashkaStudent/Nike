@@ -1,0 +1,87 @@
+@import "../../modules/variables/variables.scss";
+@import "../../abstracts/mixins";
+
+.slider {
+  position: relative;
+  padding: 0;
+  margin: 0;
+
+  &__arrow-left {
+    @include slider-arrow(left);
+  }
+
+  &__arrow-right {
+    @include slider-arrow(right);
+  }
+
+  &__items {
+    padding: 0;
+    margin: 0 0 80px;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    list-style: none;
+
+    @media screen and (max-width: 767px) {
+      margin: 0 0 40px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 20%;
+      height: 4px; /* width of the entire scrollbar */
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #292929;
+      border-radius: 100px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #ebebeb; /* color of the scroll thumb */
+      border-radius: 100px; /* roundness of the scroll thumb */
+    }
+  }
+
+  &__item {
+    position: relative;
+    margin-bottom: 40px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__item-image {
+    height: 400px;
+    width: 326px;
+  }
+
+  &__buy-button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    padding: 8px 24px;
+    min-height: 40px;
+    text-align: center;
+    border-radius: 100px;
+    border: none;
+    background-color: $section-background_color;
+    color: $text_color;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: $main_font-family;
+    transition: opacity 0.3s ease-out;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.4;
+    }
+    @media screen and (max-width: 767px) {
+      left: 50%;
+      width: calc(100% - 40px);
+      transform: translate(-50%, -50%);
+      bottom: 0px;
+    }
+  }
+}

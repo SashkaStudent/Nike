@@ -1,0 +1,39 @@
+@import '../../modules/variables/variables.scss';
+@import '../../abstracts/mixins';
+
+.goods {
+  margin: 0 auto;
+  font-family: $main_font-family;
+  &__title {
+    margin: 0 auto;
+    text-align: center;
+    @include title;
+    padding-top: 0;
+    @media screen and (max-width: 767px){
+    padding-top: 0;
+
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 20px 80px;
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      gap: 20px;
+      padding: 0 20px 40px;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    @include paragraph;
+    @include paragraph-width-limit
+  }
+
+  &__collage-photo {
+    @include full-width-photo;
+  }
+}

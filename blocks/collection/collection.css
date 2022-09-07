@@ -1,0 +1,99 @@
+.collection {
+  padding: 0;
+  font-family: "Golos", Arial, sans-serif;
+}
+.collection__title {
+  margin: 0 auto;
+  text-align: center;
+  padding: 80px 0 40px;
+  text-transform: uppercase;
+  font-size: 64px;
+  line-height: 80px;
+  font-weight: 500;
+  color: white;
+}
+@media screen and (max-width: 767px) {
+  .collection__title {
+    padding: 40px 0 20px;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 500;
+  }
+}
+.collection__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px 80px;
+}
+@media screen and (max-width: 767px) {
+  .collection__content {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px 40px;
+  }
+}
+.collection__description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: white;
+  max-width: 690px;
+}
+@media screen and (max-width: 1439px) {
+  .collection__description {
+    max-width: 359px;
+  }
+}
+.collection__description-image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 32.8571%;
+}
+@media screen and (max-width: 1439px) {
+  .collection__description-image {
+    width: 359px;
+    max-height: 202px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .collection__description-image {
+    width: 100%;
+  }
+}
+.collection__subtitle {
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 500;
+  max-width: 460px;
+}
+@media screen and (max-width: 1439px) {
+  .collection__subtitle {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    max-width: 359px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .collection__subtitle {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+}
+.collection__triple-photo {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding-bottom: 80px;
+}
+@media screen and (max-width: 767px) {
+  .collection__triple-photo {
+    padding-bottom: 40px;
+  }
+}/*# sourceMappingURL=collection.css.map */

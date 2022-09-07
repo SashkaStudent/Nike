@@ -1,0 +1,106 @@
+.slider {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.slider__arrow-left {
+  background-image: url("../../images/slider/arrow-left.svg");
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  top: calc(50% - 40px);
+  cursor: pointer;
+  transition: opacity 0.3s ease-out;
+}
+.slider__arrow-left:hover {
+  opacity: 0.4;
+}
+.slider__arrow-right {
+  background-image: url("../../images/slider/arrow-right.svg");
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  top: calc(50% - 40px);
+  cursor: pointer;
+  transition: opacity 0.3s ease-out;
+}
+.slider__arrow-right:hover {
+  opacity: 0.4;
+}
+.slider__items {
+  padding: 0;
+  margin: 0 0 80px;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  list-style: none;
+}
+@media screen and (max-width: 767px) {
+  .slider__items {
+    margin: 0 0 40px;
+  }
+}
+.slider__items::-webkit-scrollbar {
+  width: 20%;
+  height: 4px; /* width of the entire scrollbar */
+}
+.slider__items::-webkit-scrollbar-track {
+  background-color: #292929;
+  border-radius: 100px;
+}
+.slider__items::-webkit-scrollbar-thumb {
+  background-color: #ebebeb; /* color of the scroll thumb */
+  border-radius: 100px; /* roundness of the scroll thumb */
+}
+.slider__item {
+  position: relative;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+  .slider__item {
+    margin-bottom: 20px;
+  }
+}
+.slider__item-image {
+  height: 400px;
+  width: 326px;
+}
+.slider__buy-button {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  padding: 8px 24px;
+  min-height: 40px;
+  text-align: center;
+  border-radius: 100px;
+  border: none;
+  background-color: #0A0A0A;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  font-family: "Golos", Arial, sans-serif;
+  transition: opacity 0.3s ease-out;
+  cursor: pointer;
+}
+.slider__buy-button:hover {
+  opacity: 0.4;
+}
+@media screen and (max-width: 767px) {
+  .slider__buy-button {
+    left: 50%;
+    width: calc(100% - 40px);
+    transform: translate(-50%, -50%);
+    bottom: 0px;
+  }
+}/*# sourceMappingURL=slider.css.map */

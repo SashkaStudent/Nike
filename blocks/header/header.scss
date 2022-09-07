@@ -1,0 +1,160 @@
+@import "../../modules/variables/variables.scss";
+@import "../../abstracts/mixins.scss";
+
+.header {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  padding-top: 40px;
+  background-image: url("../../images/header/man-front.png");
+  background-size: cover;
+  min-height: 810px;
+  background-position: bottom;
+  font-family: $main_font-family;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 20px;
+    min-height: 360px;
+    width: 100%;
+  }
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: calc(100% - 40px);
+  }
+
+  &__menu {
+    padding: 0 40px;
+    box-sizing: border-box;
+    position: absolute;
+    max-height: 0px;
+    height: fit-content;
+    width: 100%;
+    top: 0;
+    background-color: black;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    overflow: hidden;
+
+    @media screen and (max-width: 767px) {
+      padding: 0 20px;
+    }
+
+    &_opened {
+      max-height: 810px;
+      padding: 40px;
+      height: 810px;;
+      @media screen and (max-width: 767px) {
+        padding: 20px;
+        max-height: 360px;
+        height: 360px;
+      }
+
+    }
+
+  }
+
+  &__menu-links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap:80px;
+    padding-top: 177px;
+
+    @media screen and (max-width:1439px) {
+      padding-top: 189px;
+    }
+    @media screen and (max-width:767px) {
+      padding-top: 54px;
+    }
+
+  }
+
+  &__menu-link {
+    @include paragraph;
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    transition: opacity 0.3s ease-out;
+
+    @media screen and (max-width:1439px) {
+      font-size: 24px;
+    }
+
+    @media screen and (max-width:767px) {
+      font-size: 20px;
+
+    }
+    &:hover {
+      opacity: 0.4;
+    }
+  }
+
+  &__menu-button {
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 48px;
+    height: 48px;
+    border: 0;
+    padding: 0;
+
+    cursor: pointer;
+    background-image: url("../../images/header/icon-menu.svg");
+    background-color: rgba(0, 0, 0, 0);
+    transition: opacity 0.3s ease-out;
+
+    &:hover {
+      opacity: 0.4;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__menu-close-button {
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 48px;
+    height: 48px;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    background-image: url("../../images/header/icon-close.svg");
+    background-color: rgba(0, 0, 0, 0);
+    transition: opacity 0.3s ease-out;
+
+    &:hover {
+      opacity: 0.4;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__title {
+    max-width: 460px;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 80px;
+    margin: 0;
+    padding-top: 120px;
+    text-transform: uppercase;
+    color: $header-title_color;
+    @media screen and (max-width: 1439px) {
+      padding-top: 80px;
+    }
+    @media screen and (max-width: 767px) {
+      padding-top: 40px;
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+}
