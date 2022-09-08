@@ -25,7 +25,7 @@
   &__description {
     margin: 0;
     @include paragraph;
-    @include paragraph-width-limit
+    max-width: 690px;
   }
 
   &__description-image {
@@ -52,12 +52,15 @@
       font-size: 24px;
       line-height: 32px;
       font-weight: 500;
-      max-width: 359px;
+      min-width: 359px;
+
     }
     @media screen and (max-width: 767px) {
       font-size: 20px;
       line-height: 28px;
       font-weight: 500;
+      min-width: 280px;
+
     }
   }
 

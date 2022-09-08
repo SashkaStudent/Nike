@@ -3,9 +3,9 @@
 ### Студент 15 когорты
 
 Описание проекта:
-Одностраничный адаптивный лэндинг по макету Figma в рамках курса Yandex.Practicum. 
+Одностраничный адаптивный лэндинг по макету Figma в рамках курса Yandex.Practicum.
 
 ## Инструменты и технологии:
-* HTML, CSS, JS, БЭМ, Адаптивная верстка, Figma;
+* Figma, HTML, CSS, JS, БЭМ, Адаптивная верстка;
 
 Github-pages: https://sashkastudent.github.io/Nike/
